@@ -34,3 +34,7 @@
   font-weight: 100;
   text-transform: uppercase;
 }
+
+.categories li:hover {
+  transform: scale(1.1);
+}
