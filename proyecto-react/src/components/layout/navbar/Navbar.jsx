@@ -1,18 +1,18 @@
-import CartWidget from "../../common/cartWidget/CartWidget"
+import "./Navbar.module.css";
+import CartWidget from "../../common/cartWidget/CartWidget";
 
 export const Navbar = () => {
-    return (
-      <div>
-          <h4>Logo</h4>
-          <ul>
-              <li>Inicio</li>
-              <li>Pintura</li>
-              <li>Bastidores</li>
-              <li>Papeles</li>
-              <li>Pinceles</li>
-              <li>Marcas</li>
-          </ul>
-          <CartWidget />
-      </div>
-    )
-  }
+  return (
+    <div className={"containerNavbar"}>
+      <h4>Yungas Herbal</h4>
+      <ul>
+        <li>Inicio</li>
+        <li>Hierbas</li>
+        <li>Tés</li>
+        <li>Velas</li>
+        <li>Aceites esenciales</li>
+      </ul>
+      <CartWidget />
+    </div>
+  );
+};
