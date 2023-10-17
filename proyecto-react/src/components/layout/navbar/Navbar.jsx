@@ -6,23 +6,23 @@ export const Navbar = () => {
   return (
     <>
       <div className={styles.containerNavbar}>
-        <Link to="/">
+        <Link to="/" style={{ textDecoration: "none" }}>
           <h4>Yungas Herbal</h4>
         </Link>
         <ul className={styles.categories}>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <li>Inicio</li>
           </Link>
-          <Link to="/category/hierbas">
+          <Link to="/category/hierbas" style={{ textDecoration: "none" }}>
             <li> Hierbas</li>
           </Link>
-          <Link to="/category/tes">
+          <Link to="/category/tes" style={{ textDecoration: "none" }}>
             <li>Tés</li>
           </Link>
-          <Link to="/category/velas">
+          <Link to="/category/velas" style={{ textDecoration: "none" }}>
             <li>Velas</li>
           </Link>
-          <Link to="/category/aceites">
+          <Link to="/category/aceites" style={{ textDecoration: "none" }}>
             <li>Aceites esenciales</li>
           </Link>
         </ul>
