@@ -33,7 +33,7 @@ export let products = [
     price: 1300,
     stock: 5,
     description: "Té Inti Zen verde en saquitos",
-    category: "té",
+    category: "tes",
     img: "https://res.cloudinary.com/dczlfdat0/image/upload/v1697234246/154314_te-verde-verde-chai-verde-oscuro-x-15-saquitos_imagen-1_ianct6.jpg",
   },
 ];

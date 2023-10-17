@@ -1,12 +1,15 @@
-import {BsFillCartPlusFill} from "react-icons/bs"
+import { Badge } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
   return (
-    <div>
-        <span>2</span>
-        <BsFillCartPlusFill />
-    </div>
-  )
-}
+    <Link to="/cart">
+      <Badge badgeContent={0} showZero color="primary">
+        <ShoppingCartIcon color="action" />
+      </Badge>
+    </Link>
+  );
+};
 
-export default CartWidget
+export default CartWidget;
