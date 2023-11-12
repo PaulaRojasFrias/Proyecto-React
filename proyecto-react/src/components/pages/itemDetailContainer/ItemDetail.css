@@ -1,0 +1,32 @@
+.containerImage {
+  float: left;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+.containerItemDetail {
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 2px solid #006241;
+  padding: 30px;
+  height: 460px;
+  width: 80%;
+  background-color: #006241;
+}
+
+.containerDetailrest {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerDetailrest h2,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: white;
+}

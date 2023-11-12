@@ -1,0 +1,22 @@
+.botones {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #006241;
+  color: white;
+}
