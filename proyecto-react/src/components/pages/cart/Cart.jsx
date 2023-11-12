@@ -38,8 +38,8 @@ const Cart = () => {
       {cart.map((product) => (
         <div key={product.id}>
           <h2>{product.title}</h2>
-          <h3>{product.price}</h3>
-          <h3>cantidad: {product.quantity}</h3>
+          <h3>Precio: ${product.price}</h3>
+          <h3>Cantidad: {product.quantity}</h3>
 
           <IconButton onClick={() => deleteProductById(product.id)}>
             <DeleteForeverIcon color="primary" />

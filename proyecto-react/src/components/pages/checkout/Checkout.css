@@ -1,0 +1,28 @@
+.contenedorPrincipal {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.contenerdorForm {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.campoInput {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}

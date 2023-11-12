@@ -8,6 +8,8 @@ import { db } from "../../../firebaseConfig";
 import { collection, addDoc, updateDoc, doc } from "firebase/firestore";
 import { Link } from "react-router-dom";
 
+import "./Checkout.css";
+
 const Checkout = () => {
   const [userData, setUserData] = useState({
     name: "",
@@ -51,32 +53,41 @@ const Checkout = () => {
   return (
     <>
       {orderId ? (
-        <div>
-          <h2>Gracias por su compra, su N° de comprobante es {orderId}</h2>
-          <Link to="/">Seguir comprando</Link>
+        <div className={"contenedorPrincipal"}>
+          <h2>Gracias por su compra, su N° de comprobante es {orderId}</h2>{" "}
+          <br />
+          <Link to="/" style={{ color: "#006241" }}>
+            Seguir comprando
+          </Link>
         </div>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Ingresa tu nombre"
-            name="name"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="Ingresa tu telefono"
-            name="phone"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="Ingresa tu email"
-            name="email"
-            onChange={handleChange}
-          />
-          <button type="submit">Comprar</button>
-        </form>
+        <div className={"contenedorPrincipal"}>
+          <h2>Checkout</h2>
+          <form className={"contenerdorForm"} onSubmit={handleSubmit}>
+            <input
+              className={"campoInput"}
+              type="text"
+              placeholder="Ingresa tu nombre"
+              name="name"
+              onChange={handleChange}
+            />
+            <input
+              className={"campoInput"}
+              type="text"
+              placeholder="Ingresa tu telefono"
+              name="phone"
+              onChange={handleChange}
+            />
+            <input
+              className={"campoInput"}
+              type="text"
+              placeholder="Ingresa tu email"
+              name="email"
+              onChange={handleChange}
+            />
+            <button type="submit">Comprar</button>
+          </form>
+        </div>
       )}
     </>
   );
